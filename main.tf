@@ -5,5 +5,5 @@ module "GKE" {
   for_each  = local.k8s_map
 
   cluster_name = each.key
-  cluster_location = each.location
+  cluster_location = each.value.location
 }
