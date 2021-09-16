@@ -1,6 +1,9 @@
 module "GKE" {
   source = "./GKE"
 
-  cluster_name = "my-cluster-1"
-  cluster_location = "us-central-1"
+  #Create multiple K8S clusters using for_each
+  for_each  = local.k8s_map
+
+  cluster_name = local.k8s_map.key
+  cluster_location = local.k8s_map.value.location
 }
