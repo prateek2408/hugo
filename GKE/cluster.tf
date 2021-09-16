@@ -1,6 +1,6 @@
 resource "google_container_cluster" "primary" {
-  name     = var.name
-  location = var.location
+  name     = var.cluster_name
+  location = var.cluster_location
 
   remove_default_node_pool = true
   initial_node_count       = 1
