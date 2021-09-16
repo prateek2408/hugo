@@ -1,0 +1,3 @@
+module "GKE" {
+  source = "./GKE"
+}
