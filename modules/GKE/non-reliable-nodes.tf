@@ -1,6 +1,6 @@
 resource "google_container_node_pool" "primary_preemptible_nodes" {
   name       = var.node_pool_name
-  location   = "us-central1"
+  location   = var.node_pool_location
   cluster    = google_container_cluster.primary.name
   node_count = 1
 
