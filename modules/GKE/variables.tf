@@ -18,6 +18,11 @@ variable "node_pool_name" {
   type = string
 }
 
+variable "node_pool_location" {
+  type = string
+}
+
+
 variable "is_preemptible" {
   type = bool
 }
