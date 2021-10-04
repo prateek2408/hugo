@@ -13,3 +13,11 @@ variable "service_account_name" {
 variable "service_account_id" {
   type = string
 }
+
+variable "node_pool_name" {
+  type = string
+}
+
+variable "is_preemtable" {
+  type = bool
+}
