@@ -1,3 +1,3 @@
 output "ID" {
-  value = vpc_compute_network.vpc.id 
+  value = google_compute_network.vpc.id 
 }
