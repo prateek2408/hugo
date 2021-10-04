@@ -18,6 +18,6 @@ variable "node_pool_name" {
   type = string
 }
 
-variable "is_preemtible" {
+variable "is_preemptible" {
   type = bool
 }

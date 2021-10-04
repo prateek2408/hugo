@@ -5,14 +5,14 @@ locals {
       "sa_name" = "my-cluster1-sa"
       "sa_id" = "my-cluster1-sa1"
       "np_name" = "my-cluster1-np"
-      "is_preemtible" = false
+      "is_preemptible" = false
     },
     "my-cluster2" = {
       "location" = "europe-west1"
       "sa_name"  = "my-cluster2-sa"
       "sa_id"    = "my-cluster2-sa2"
       "np_name" = "my-cluster2-np"
-      "is_preemtible" = true
+      "is_preemptible" = true
     }
   }
 }
