@@ -1,5 +1,5 @@
 module "GKE" {
-  source = "./GKE"
+  source = "./modules/GKE"
 
   #Create multiple K8S clusters using for_each
   for_each  = local.k8s_map
