@@ -1,3 +1,14 @@
+module "VPC" {
+  source = "./modules/VPC"
+
+  project = var.project_id
+  vpc_name = var.vpc_name
+  create_vpc = true
+  create_subnets = true
+
+}
+
+
 module "GKE" {
   source = "./modules/GKE"
 
@@ -11,4 +22,5 @@ module "GKE" {
   node_pool_name = each.value.np_name
   node_pool_location = each.value.location
   is_preemptible = each.value.is_preemptible
+  vpc_network = module.VPC.ID
 }

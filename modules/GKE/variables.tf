@@ -26,3 +26,7 @@ variable "node_pool_location" {
 variable "is_preemptible" {
   type = bool
 }
+
+variable "vpc_network" {
+  type = string
+}
