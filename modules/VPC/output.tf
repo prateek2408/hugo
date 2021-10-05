@@ -1,3 +1,3 @@
 output "ID" {
-  value = google_compute_network.vpc[google_compute_network.vpc.count].id 
+  value = google_compute_network.vpc[length(google_compute_network.vpc)].id 
 }
