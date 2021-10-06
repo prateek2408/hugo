@@ -2,7 +2,7 @@ module "VPC" {
   source = "./modules/VPC"
 
   project = var.project_id
-  vpc_name = var.vpc_name
+  vpc_name = var.cool_vpc_name
   create_vpc = true
   create_subnets = true
 

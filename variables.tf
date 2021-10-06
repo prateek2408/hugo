@@ -3,6 +3,6 @@ variable "project_id" {
 }
 
 
-variable "vpc_name" {
+variable "cool_vpc_name" {
   type = string
 }
